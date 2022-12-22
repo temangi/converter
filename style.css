@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.first{
+    width: 360px;
+    height: 750px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(202, 205, 245);
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+
+input{
+    height: 25px;
+    width: 80%;
+    font-size: 20px;
+}
+
+button{
+    margin: 20px;
+}
+
+.second{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px ;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.grid-item{
+    border: 1px solid;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgb(179, 174, 174);
+}
+
+
+#1{
+    grid-area: 1;
+}#2{
+    grid-area: 2;
+}#3{
+    grid-area: 3;
+}#4{
+    grid-area: 4;
+}#5{
+    grid-area: 5;
+}
+#6{
+    grid-area: 6;
+}#7{
+    grid-area: 7;
+}#8{
+    grid-area: 8;
+}#9{
+    grid-area: 9;
+}#0{
+    grid-area: 0;
+}#zap{
+    grid-area: zap;
+}#C{
+    grid-area: C;
+    color: red;
+    background-color: #f78383;
+}#DEL{
+    grid-area: DEL;
+    background-color: #6a6afa;
+}#OK{
+    grid-area: OK;
+    background-color: greenyellow;
+    color: green;
+}
+
+.grid{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "7 8 9 C"
+    "4 5 6 DEL"
+    "1 2 3 OK"
+    "0 zap zap OK";
+    grid-gap: 5px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.second select{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+}
+
+.switcher{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background: blue;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.input{
+    border: none;
+    outline: none;
+    width: auto;
+}
